@@ -23,10 +23,45 @@ include 'header.php';
     document.querySelector('.hero-wrap').classList.remove('js-fullheight');
   </script>
 
-	<?php
-    include 'search-hotel.php';
-  ?>
+<!-- SEARCH TAB FOR HOMEPAGE -->
+<section class="ftco-section ftco-no-pb ftco-no-pt">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ftco-search d-flex justify-content-center">
+						<div class="row">
+							<div class="col-md-12 nav-link-wrap">
+								<div class="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+									<a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Search Tour</a>
 
+									<a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Hotel</a>
+
+								</div>
+							</div>
+							<div class="col-md-12 tab-wrap">
+								
+								<div class="tab-content" id="v-pills-tabContent">
+								<!-- TOUR TAB -->
+								<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
+								<?php
+								include 'search-tour.php';
+								?>
+								</div>
+								<!-- HOTEL TAB -->
+								<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
+								<?php
+								include 'search-hotel.php';
+								?>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<!-- RESULT ITEMS -->
 <section class="ftco-section">
    <div class="container">
     <div class="row">

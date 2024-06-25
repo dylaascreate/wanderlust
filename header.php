@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?php echo '<title>'.$title.'</title>'; ?>
+	<?php
+	// $title = 'Your Page Title'; // Define your title dynamically
+	echo '<title>' . $title . '</title>';
+	?>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
@@ -19,11 +22,16 @@
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="css/jquery.timepicker.css">
 
-	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<?php
+	function isActive($page) {
+		$current_file = basename($_SERVER['PHP_SELF']);
+		return $current_file == $page ? 'active' : '';
+	}
+	?>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.php">WanderLust<span>Travel & Tour</span></a>
@@ -33,14 +41,16 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="destination.php" class="nav-link">Destination</a></li>
-					<li class="nav-item"><a href="hotel.php" class="nav-link">Hotel</a></li>
-					<li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
-					<li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+					<li class="nav-item <?php echo isActive('index.php'); ?>"><a href="index.php" class="nav-link">Home</a></li>
+					<li class="nav-item <?php echo isActive('about.php'); ?>"><a href="about.php" class="nav-link">About</a></li>
+					<li class="nav-item <?php echo isActive('destination.php'); ?>"><a href="destination.php" class="nav-link">Destination</a></li>
+					<li class="nav-item <?php echo isActive('hotel.php'); ?>"><a href="hotel.php" class="nav-link">Hotel</a></li>
+					<li class="nav-item <?php echo isActive('blog.php'); ?>"><a href="blog.php" class="nav-link">Blog</a></li>
+					<li class="nav-item <?php echo isActive('contact.php'); ?>"><a href="contact.php" class="nav-link">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<!-- END nav -->
+</body>
+</html>

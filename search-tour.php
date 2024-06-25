@@ -11,7 +11,7 @@
 		</div>
 		<div class="col-md d-flex">
 			<div class="form-group p-4">
-				<label for="#">Check-in date</label>
+				<label for="#">Depart date</label>
 				<div class="form-field">
 					<div class="icon"><span class="fa fa-calendar"></span></div>
 					<input type="text" class="form-control checkin_date" placeholder="Check In Date">
@@ -20,7 +20,7 @@
 		</div>
 		<div class="col-md d-flex">
 			<div class="form-group p-4">
-				<label for="#">Check-out date</label>
+				<label for="#">Return date</label>
 				<div class="form-field">
 					<div class="icon"><span class="fa fa-calendar"></span></div>
 					<input type="text" class="form-control checkout_date" placeholder="Check Out Date">
