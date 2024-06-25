@@ -60,7 +60,7 @@ MySQL: Version 5.7 or higher.
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/wanderlust-diarest.git
+   git clone https://github.com/dylaascreate/wanderlust.git
    ```
 2. Navigate to the project directory:
    ```sh
@@ -108,7 +108,7 @@ We welcome contributions from the community. To contribute:
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License].
 
 ---
 
