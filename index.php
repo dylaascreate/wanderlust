@@ -1,14 +1,14 @@
 <?php
-$title = 'WonderLust - Travel & Tour';
+$title = 'Natural WonderLust - Travel & Tour';
 include 'header.php';
 ?>
 	
-	<div class="hero-wrap js-fullheight" style="background-image: url('images/bg_5.jpg');">
+	<div class="hero-wrap js-fullheight" style="background-image: url('images/bg-img-4.png');">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
 				<div class="col-md-7 ftco-animate">
-					<span class="subheading">Welcome to WanderLust</span>
+					<span class="subheading">Welcome to Natural WanderLust</span>
 					<h1 class="mb-4">Discover Your Favorite Place with Us</h1>
 					<p class="caps">Travel to the any corner of the world, without going around in circles</p>
 				</div>
@@ -63,7 +63,7 @@ include 'header.php';
 				<div class="row d-flex">
 					<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
 						<div class="w-100">
-							<span class="subheading">Welcome to WanderLust</span>
+							<span class="subheading">Welcome to Natural WanderLust</span>
 							<h2 class="mb-4">It's time to start your adventure</h2>
 							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
