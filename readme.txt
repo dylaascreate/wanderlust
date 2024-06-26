@@ -1,4 +1,4 @@
-# WanderLust Diarest (WLD)
+# Natural WanderLust (NWL)
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@
 
 ## Overview
 
-**WanderLust Diarest (WLD)** is a comprehensive travel website designed to enhance user experiences by simplifying content management and facilitating trip planning. Our goal is to create an informative and aesthetically pleasing platform that appeals to both foreign and local travelers.
+**Natural WanderLust (NWL)** is a comprehensive travel website designed to enhance user experiences by simplifying content management and facilitating trip planning. Our goal is to create an informative and aesthetically pleasing platform that appeals to both foreign and local travelers.
 
 ## Objectives
 
@@ -64,27 +64,7 @@ MySQL: Version 5.7 or higher.
    ```
 2. Navigate to the project directory:
    ```sh
-   cd wanderlust-diarest
-   ```
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-
-### Running the Application
-
-1. Start the development server:
-   ```sh
-   npm start
-   ```
-2. Open your browser and navigate to `http://localhost:3000` to view the application.
-
-### Database Setup
-
-1. Configure the database connection in the `config` directory.
-2. Run database migrations:
-   ```sh
-   npm run migrate
+   cd wanderlust
    ```
 
 ## Contributing
@@ -94,15 +74,15 @@ We welcome contributions from the community. To contribute:
 1. Fork the repository.
 2. Create a new branch:
    ```sh
-   git checkout -b feature/your-feature
+   git checkout -b branch-name
    ```
 3. Commit your changes:
    ```sh
-   git commit -m 'Add your feature'
+   git commit -m 'comment'
    ```
 4. Push to the branch:
    ```sh
-   git push origin feature/your-feature
+   git push origin branch-name
    ```
 5. Open a pull request.
 
@@ -112,4 +92,4 @@ This project is licensed under the [MIT License].
 
 ---
 
-Feel free to customize any sections as needed for your specific project requirements.
+Feel free to customize any sections as needed.
