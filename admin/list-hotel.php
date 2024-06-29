@@ -231,8 +231,8 @@
                                                         <div class="container">
                                                             <div class="image-column">
                                                                 <div class="img">
-                                                                    <label for="image-url">Image URL:</label>
-                                                                    <input type="text" name="image-url" placeholder="Enter image URL" value="<?php echo$row[''] ?>"required>
+                                                                    <label for="image-url">Image:</label>
+                                                                    <img src="img/<?php echo $row['']; ?>" style="width: 200px; height: 150px;">
                                                                 </div>
                                                             </div>
                                                             <div class="data-column">
