@@ -11,7 +11,7 @@
    </head>
    <body>
       <div class="login">
-         <img src="img/pic1register.jpg" alt="login image" class="login__img">
+         <img src="wanderlust-main/images/pic1register.jpg" alt="login image" class="login__img">
 
          <form action="" class="login__form">
             <h1 class="login__title">Login</h1>
