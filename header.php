@@ -34,7 +34,7 @@
 	?>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.php">WanderLust<span>Travel & Tour</span></a>
+			<a class="navbar-brand" href="index.php">N. WanderLust<span>Travel & Tour</span></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
 			</button>
@@ -47,6 +47,7 @@
 					<li class="nav-item <?php echo isActive('hotel.php'); ?>"><a href="hotel.php" class="nav-link">Hotel</a></li>
 					<li class="nav-item <?php echo isActive('blog.php'); ?>"><a href="blog.php" class="nav-link">Blog</a></li>
 					<li class="nav-item <?php echo isActive('contact.php'); ?>"><a href="contact.php" class="nav-link">Contact</a></li>
+					<li class="nav-item <?php echo isActive('login-user.php'); ?>"><a href="login-user.php" class="btn btn-primary nav-link"><i class="fa fa-sign-in"></i>&nbsp;Login</a></li>
 				</ul>
 			</div>
 		</div>
