@@ -227,8 +227,8 @@
                                                     <form action="" method="post">
                                                         <div class="blog-entry justify-content-end">
                                                             <div class="block-20">
-                                                                <label for="image-url">Image URL:</label>
-                                                                <input type="text" name="image-url" placeholder="Enter Client image URL" value="<?php echo$row[''] ?>"required>
+                                                                <label for="image-url">Image:</label>
+                                                                <input type="file" name="image-url" placeholder="Enter Client image URL" value="<?php echo$row[''] ?>"required>
                                                             </div>
                                                             <div class="text">
                                                                 <div class="d-flex align-items-center mb-4 topp">
