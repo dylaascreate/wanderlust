@@ -283,8 +283,8 @@
                                                     <h2>Update Hotel</h2>
                                                     <form action="" method="post">
                                                         <div class="img">
-                                                            <label for="image-url">Image URL:</label>
-                                                            <input type="text" name="image-url" placeholder="Enter image URL" value="<?php echo$row[''] ?>"required>
+                                                            <label for="image-url">Image:</label>
+                                                            <input type="file" name="image-url" placeholder="Enter image URL" value="<?php echo$row[''] ?>"required>
                                                         </div>
                                                         <div class="text p-4">
                                                             <div class="form-row">
