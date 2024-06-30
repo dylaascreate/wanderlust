@@ -134,7 +134,7 @@
 
                         <!-- Your form HTML content -->
                         <h2 style="color:black" >User Form</h2>
-                        <form>
+                        <form action="" method="post">
                             <label for="image-url">Image</label>
                             <input type="text" id="title" name="title" placeholder="Your image.." required>
 
@@ -195,7 +195,7 @@
                                                     <!-- Close button -->
                                                     <span class="close" onclick="closePopup('viewPopup')">&times;</span>
                                                     <h2>View User</h2>
-                                                    <form action="" method="post">
+                                                    <form>
                                                         <div class="container">
                                                             <div class="image-column">
                                                                 <div class="block-20">
