@@ -12,7 +12,7 @@
     <div class="sidebar">
         <div class="side-content">
             <div class="profile">
-                <div class="profile-img bg-img" style="background-image: url(img/pic1register.jpg)"></div>
+                <div class="profile-img bg-img" style="background-image: url(img/WanderLust-Logo.png)"></div>
                 <h4>Admin NWDL</h4>
                 <small>N.WanderLust</small>
             </div>
