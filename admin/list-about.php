@@ -134,7 +134,7 @@
 
                         <!-- Your form HTML content -->
                         <h2 style="color:black">About Form</h2>
-                        <form>
+                        <form action="" method="post">
                             <label for="tittle">Title</label>
                             <input type="text" id="title" name="title" placeholder="Your title.." required>
 
@@ -186,7 +186,7 @@
 
                                                     <!-- Your form HTML content -->
                                                     <h2>View About</h2>
-                                                    <form action="" method="post">
+                                                    <form>
                                                         <label for="tittle">Title</label>
                                                         <input type="text" name="title" placeholder="Your title.." value="<?php echo$row[''] ?>"required>
 
