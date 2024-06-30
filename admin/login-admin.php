@@ -18,7 +18,7 @@
 
         /*===== VARIABLES CSS =====*/
         :root {
-            --first-color: #ffc61a;
+            --first-color: #ffd633;
             --text-color: #8590AD;
             --body-font: 'Roboto', sans-serif;
             --big-font-size: 2rem;
@@ -216,9 +216,9 @@
         <div class="shape2"></div>
 
         <div class="form">
-            <img src="wanderlust-main/images/WanderLust-Logo.png" alt="" class="form__img">
+            <img src="img/WanderLust-Logo.png" alt="" class="form__img">
 
-            <form action="" class="form__content">
+            <form action="index-admin.php" class="form__content">
                 <h1 class="form__title">Welcome</h1>
 
                 <div class="form__div form__div-one">
