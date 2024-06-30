@@ -12,7 +12,7 @@
     <div class="sidebar">
         <div class="side-content">
             <div class="profile">
-                <div class="profile-img bg-img" style="background-image: url(img/pic1register.jpg)"></div>
+                <div class="profile-img bg-img" style="background-image: url(img/WanderLust-Logo.png)"></div>
                 <h4>Admin NWDL</h4>
                 <small>N.WanderLust</small>
             </div>
@@ -72,8 +72,7 @@
                     <div class="nav-section">
                         <nav>
                             <ul>
-                                <li><a style="color:black" href="feedback.php">Feedback</a></li>
-                            </ul>
+                                <li><a class="hover-effect" href="feedback.php"><i class="las la-comments"></i>&nbsp;Feedback</a></li>
                         </nav>
                     </div>
                 </div>
@@ -267,7 +266,7 @@
                                                     <form action="" method="post">
                                                         <div class="blog-entry justify-content-end">
                                                             <div class="block-20">
-                                                                <label for="image-url">Image:</label>
+                                                                <label for="image-url">Image URL:</label>
                                                                 <input type="file" name="image-url" placeholder="Enter background image URL" value="<?php echo$row[''] ?>"required>
                                                             </div>
                                                             <div class="text">
