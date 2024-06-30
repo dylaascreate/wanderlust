@@ -12,7 +12,7 @@
     <div class="sidebar">
         <div class="side-content">
             <div class="profile">
-                <div class="profile-img bg-img" style="background-image: url(img/pic1register.jpg)"></div>
+                <div class="profile-img bg-img" style="background-image: url(img/WanderLust-Logo.png)"></div>
                 <h4>Admin NWDL</h4>
                 <small>N.WanderLust</small>
             </div>
@@ -218,8 +218,8 @@
                                                         <div class="container">
                                                             <div class="image-column">
                                                                <div class="img">
-                                                                    <label for="image-url">Image:</label>
-                                                                    <img src="img/<?php echo $row['']; ?>" style="width: 200px; height: 150px;">
+                                                                    <label for="image-url">Image URL:</label>
+                                                                    <input type="text" name="image-url" placeholder="Enter image URL" value="<?php echo$row[''] ?>"required>
                                                                 </div> 
                                                             </div>
                                                             <div class="data-column">
@@ -261,7 +261,7 @@
                                                     <h2>Update Destination</h2>
                                                     <form>
                                                         <div class="img">
-                                                            <label for="image-url">Image:</label>
+                                                            <label for="image-url">Image URL:</label>
                                                             <input type="file" name="image-url" placeholder="Enter image URL" value="<?php echo$row[''] ?>"required>
                                                         </div>
                                                         <div class="text p-4">
