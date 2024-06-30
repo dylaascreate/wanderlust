@@ -143,7 +143,7 @@
                         <span class="close" onclick="closePopup('addPopup')">&times;</span>
                         <!-- Your form HTML content -->
                         <h2 style="color:black">Blog Form</h2>
-                        <form>
+                        <form action="" method="post">
                             <div class="blog-entry justify-content-end">
                                 <div class="block-20">
                                     <label for="image-url">Image URL:</label>
@@ -222,7 +222,7 @@
                                                     <!-- Close button -->
                                                     <span class="close" onclick="closePopup('viewPopup')">&times;</span>
                                                     <h2>view Blog</h2>
-                                                    <form action="" method="post">
+                                                    <form>
                                                         <div class="container">
                                                             <div class="image-column">
                                                                 <div class="block-20">
