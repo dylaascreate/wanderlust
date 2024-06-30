@@ -133,7 +133,7 @@
                         <span class="close" onclick="closePopup('addPopup')">&times;</span>
                         <!-- Your form HTML content -->
                         <h2 style="color:black">Hotel Form</h2>
-                        <form>
+                        <form action="" method="post">
                             <div class="img">
                                 <label for="image-url">Image URL:</label>
                                 <input type="text" id="image-url" name="image-url" placeholder="Enter image URL">
@@ -227,7 +227,7 @@
                                                     <!-- Close button -->
                                                     <span class="close" onclick="closePopup('viewPopup')">&times;</span>
                                                     <h2>View Hotel</h2>
-                                                    <form action="" method="post">
+                                                    <form>
                                                         <div class="container">
                                                             <div class="image-column">
                                                                 <div class="img">
