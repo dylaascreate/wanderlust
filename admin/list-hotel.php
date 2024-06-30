@@ -12,7 +12,7 @@
     <div class="sidebar">
         <div class="side-content">
             <div class="profile">
-                <div class="profile-img bg-img" style="background-image: url(img/pic1register.jpg)"></div>
+                <div class="profile-img bg-img" style="background-image: url(img/WanderLust-Logo.png)"></div>
                 <h4>Admin NWDL</h4>
                 <small>N.WanderLust</small>
             </div>
@@ -283,7 +283,7 @@
                                                     <h2>Update Hotel</h2>
                                                     <form action="" method="post">
                                                         <div class="img">
-                                                            <label for="image-url">Image:</label>
+                                                            <label for="image-url">Image URL:</label>
                                                             <input type="file" name="image-url" placeholder="Enter image URL" value="<?php echo$row[''] ?>"required>
                                                         </div>
                                                         <div class="text p-4">
