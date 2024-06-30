@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <title>WonderLust Admin Dashboard</title>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css" /> 
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <input type="checkbox" id="menu-toggle">
     <div class="sidebar">
         <div class="side-content">
             <div class="profile">
-                <div class="profile-img bg-img" style="background-image: url(img/pic1register.jpg)"></div>
+                <div class="profile-img bg-img" style="background-image: url(img/WanderLust-Logo.png)"></div>
                 <h4>Admin NWDL</h4>
                 <small>N.WanderLust</small>
             </div>
@@ -199,8 +199,8 @@
                                                         <div class="container">
                                                             <div class="image-column">
                                                                 <div class="block-20">
-                                                                    <label for="image-url">Image:</label>
-                                                                    <img src="img/<?php echo $row['']; ?>" style="width: 200px; height: 150px;">
+                                                                    <label for="image-url">Image URL:</label>
+                                                                    <input type="text" name="image-url" placeholder="Enter Client image URL" value="<?php echo$row[''] ?>" required>
                                                                 </div>
                                                             </div>
                                                             <div class="data-column">
@@ -227,8 +227,8 @@
                                                     <form action="" method="post">
                                                         <div class="blog-entry justify-content-end">
                                                             <div class="block-20">
-                                                                <label for="image-url">Image:</label>
-                                                                <input type="file" name="image-url" placeholder="Enter Client image URL" value="<?php echo$row[''] ?>"required>
+                                                                <label for="image-url">Image: </label>
+                                                                <input type="file" name="image-url" value="<?php echo$row[''] ?>"required>
                                                             </div>
                                                             <div class="text">
                                                                 <div class="d-flex align-items-center mb-4 topp">
