@@ -1,7 +1,8 @@
 <?php
-$title = 'Blog';
+$title = 'WonderLust - Travel & Tour';
 include 'header.php';
 ?>
+	
  
  <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
   <div class="overlay"></div>
