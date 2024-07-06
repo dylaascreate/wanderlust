@@ -5728,10 +5728,10 @@ button.bg-dark:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-/* .d-flex {
+.d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
-  display: flex !important; } */
+  display: flex !important; }
 
 .d-inline-flex {
   display: -webkit-inline-box !important;
