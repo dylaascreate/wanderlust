@@ -18,8 +18,8 @@ include 'header.php';
 			<div class="container">
 				<div class="row justify-content-center pb-4">
 					<div class="col-md-12 heading-section text-center ftco-animate">
-						<span class="subheading">Activities</span>
-						<h2 class="mb-4">Popular Activities To Do</h2> 
+						<span class="subheading">Places</span>
+						<h2 class="mb-4">Interesting Places To Visit</h2> 
 						<!-- pull >4 data from databse, select destination and calc total of tour existed from tour table -->
 					</div>
 				</div>
