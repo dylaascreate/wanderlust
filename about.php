@@ -20,7 +20,7 @@ include 'header.php';
     <div class="row d-flex">
       <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
        <div class="w-100">
-        <span class="subheading">Welcome to Pacific</span>
+        <span class="subheading">Welcome to Natural Wanderlust!</span>
         <h2 class="mb-4">It's time to start your adventure</h2>
         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
@@ -78,7 +78,7 @@ include 'header.php';
  <div class="container py-md-5">
   <div class="row py-md-5">
    <div class="col-md d-flex align-items-center justify-content-center">
-    <a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+    <a href="https://www.youtube.com/watch?v=sKDQFvw-wrM" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
      <span class="fa fa-play"></span>
    </a>
  </div>
@@ -101,35 +101,6 @@ include 'header.php';
          <span class="subheading">About Us</span>
          <h2 class="mb-4">Make Your Tour Memorable and Safe With Us</h2>
          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-         <div class="row g-3 pb-4">
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                        <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Rooms</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                        <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Staffs</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                        <i class="fa fa-users fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Clients</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <!-- <p><a href="#" class="btn btn-primary">Book Your Destination</a></p> -->
        </div>
      </div>
