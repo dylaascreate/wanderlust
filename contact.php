@@ -2,7 +2,7 @@
 $title = 'Contact Us';
 include 'header.php';
 ?>
- 
+ <!-- HERO -->
  <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
   <div class="overlay"></div>
   <div class="container">
@@ -14,7 +14,7 @@ include 'header.php';
    </div>
  </div>
 </section>
-
+<!-- CONTACT INFO -->
 <section class="ftco-section ftco-no-pb contact-section mb-4">
   <div class="container">
     <div class="row d-flex contact-info">
@@ -24,7 +24,7 @@ include 'header.php';
          <span class="fa fa-map-marker"></span>
        </div>
        <h3 class="mb-2">Address</h3>
-       <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+       <p>UPSI, 35900 Tanjong Malim, Perak</p>
      </div>
    </div>
    <div class="col-md-3 d-flex">
@@ -33,7 +33,7 @@ include 'header.php';
        <span class="fa fa-phone"></span>
      </div>
      <h3 class="mb-2">Contact Number</h3>
-     <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+     <p><a href="tel://1234567890">123-456-7890</a></p>
    </div>
  </div>
  <div class="col-md-3 d-flex">
@@ -42,7 +42,7 @@ include 'header.php';
      <span class="fa fa-paper-plane"></span>
    </div>
    <h3 class="mb-2">Email Address</h3>
-   <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+   <p><a href="mailto:info@nwl.com">info@nwl.com</a></p>
  </div>
 </div>
 <div class="col-md-3 d-flex">
@@ -51,13 +51,14 @@ include 'header.php';
    <span class="fa fa-globe"></span>
  </div>
  <h3 class="mb-2">Website</h3>
- <p><a href="#">yoursite.com</a></p>
+ <p><a href="nwanderlust.com">nwanderlust.com</a></p>
 </div>
 </div>
 </div>
 </div>
 </section>
 
+<!-- CONTACT FORM -->
 <section class="ftco-section contact-section ftco-no-pt">
   <div class="container">
     <div class="row block-9">
@@ -82,114 +83,14 @@ include 'header.php';
         
       </div>
 
-      <div class="col-md-6 d-flex">
-       <div id="map" class="bg-white"></div>
+     <!-- MAP -->
+     <div class="col-md-6 d-flex location-map">
+       <!-- <div id="" class="bg-white"> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+       <!-- </div> -->
      </div>
    </div>
  </div>
 </section>
 
-<section class="ftco-intro ftco-section ftco-no-pt">
- <div class="container">
-  <div class="row justify-content-center">
-   <div class="col-md-12 text-center">
-    <div class="img"  style="background-image: url(images/bg_2.jpg);">
-     <div class="overlay"></div>
-     <h2>We Are Pacific A Travel Agency</h2>
-     <p>We can manage your dream building A small river named Duden flows by their place</p>
-     <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Ask For A Quote</a></p>
-   </div>
- </div>
-</div>
-</div>
-</section>
-
-
-<footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/bg_3.jpg);">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md pt-5">
-        <div class="ftco-footer-widget pt-md-5 mb-4">
-          <h2 class="ftco-heading-2">About</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-            <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-            <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-            <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md pt-5 border-left">
-        <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-          <h2 class="ftco-heading-2">Infromation</h2>
-          <ul class="list-unstyled">
-            <li><a href="#" class="py-2 d-block">Online Enquiry</a></li>
-            <li><a href="#" class="py-2 d-block">General Enquiries</a></li>
-            <li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
-            <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-            <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-            <li><a href="#" class="py-2 d-block">Call Us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md pt-5 border-left">
-       <div class="ftco-footer-widget pt-md-5 mb-4">
-        <h2 class="ftco-heading-2">Experience</h2>
-        <ul class="list-unstyled">
-          <li><a href="#" class="py-2 d-block">Adventure</a></li>
-          <li><a href="#" class="py-2 d-block">Hotel and Restaurant</a></li>
-          <li><a href="#" class="py-2 d-block">Beach</a></li>
-          <li><a href="#" class="py-2 d-block">Nature</a></li>
-          <li><a href="#" class="py-2 d-block">Camping</a></li>
-          <li><a href="#" class="py-2 d-block">Party</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-md pt-5 border-left">
-      <div class="ftco-footer-widget pt-md-5 mb-4">
-       <h2 class="ftco-heading-2">Have a Questions?</h2>
-       <div class="block-23 mb-3">
-         <ul>
-           <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-           <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-           <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">info@yourdomain.com</span></a></li>
-         </ul>
-       </div>
-     </div>
-   </div>
- </div>
- <div class="row">
-  <div class="col-md-12 text-center">
-
-    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-    </div>
-  </div>
-</div>
-</footer>
-
-
-
-<!-- loader -->
-<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-migrate-3.0.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.animateNumber.min.js"></script>
-<script src="js/bootstrap-datepicker.js"></script>
-<script src="js/scrollax.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-<script src="js/google-map.js"></script>
-<script src="js/main.js"></script>
-
-</body>
-</html>
+<?php include 'footer.php'; ?>
