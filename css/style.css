@@ -807,7 +807,8 @@ pre {
   .col-sm-4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.33333%;
-    flex: 0 0 33.33333%;
+    /* flex: 0 0 33.33333%; */
+    flex: 0 0 auto;
     max-width: 33.33333%; }
   .col-sm-5 {
     -webkit-box-flex: 0;
@@ -5672,7 +5673,9 @@ button.bg-dark:focus {
   border-radius: 0.2rem !important; }
 
 .rounded {
-  border-radius: 0.25rem !important; }
+  border-radius: 0.25rem !important; 
+  /* border-radius: 2px !important  */
+}
 
 .rounded-top {
   border-top-left-radius: 0.25rem !important;
@@ -5701,6 +5704,19 @@ button.bg-dark:focus {
 
 .rounded-0 {
   border-radius: 0 !important; }
+
+.rounded-1 {
+  border-radius:.2rem !important }
+  
+.rounded-2{
+  border-radius:2px !important }
+  
+.rounded-3{
+  border-radius:.3rem !important }
+
+.rounded-start{
+  border-bottom-left-radius:2px !important;
+  border-top-left-radius:2px !important }
 
 .clearfix::after {
   display: block;
@@ -10233,4 +10249,17 @@ body {
 .carousel-1 .item:has(+ * + *:hover) {
   filter: brightness(0.4);
   transform: translateZ(50px) rotateY(-15deg);
+}
+
+.g-3,.gy-3{ --bs-gutter-y: 1rem }
+
+.counter {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #333;
+  animation: count 3s linear forwards;
+}
+@keyframes count {
+  from { counter-reset: number 0; }
+  to { counter-reset: number 100; }
 }

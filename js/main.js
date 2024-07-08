@@ -271,3 +271,36 @@
 
 })(jQuery);
 
+document.addEventListener("DOMContentLoaded", () => {
+	const counter = document.getElementById('counter');
+	let count = 0;
+	const target = 100;
+	const duration = 3000;
+	const stepTime = Math.abs(Math.floor(duration / target));
+	
+	function updateCounter() {
+		counter.textContent = count;
+		if (count < target) {
+				count++;
+				setTimeout(updateCounter, stepTime);
+		}
+	}
+	updateCounter();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+	const counter = document.getElementById('counter-2');
+	let count = 0;
+	const target = 100;
+	const duration = 3000;
+	const stepTime = Math.abs(Math.floor(duration / target));
+	
+	function updateCounter() {
+		counter.textContent = count;
+		if (count < target) {
+				count++;
+				setTimeout(updateCounter, stepTime);
+		}
+	}
+	updateCounter();
+});
