@@ -42,13 +42,13 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item <?php echo isActive('index.php'); ?>"><a href="index.php" class="nav-link">Home</a></li>
+					<!-- <li class="nav-item <?php echo isActive('index.php'); ?>"><a href="index.php" class="nav-link">Home</a></li> -->
 					<li class="nav-item <?php echo isActive('about.php'); ?>"><a href="about.php" class="nav-link">About</a></li>
 					<li class="nav-item <?php echo isActive('destination.php'); ?>"><a href="destination.php" class="nav-link">Destination</a></li>
 					<li class="nav-item <?php echo isActive('hotel.php'); ?>"><a href="hotel.php" class="nav-link">Hotel</a></li>
-					<li class="nav-item <?php echo isActive('blog.php'); ?>"><a href="blog.php" class="nav-link">Blog</a></li>
+					<!-- <li class="nav-item <?php echo isActive('blog.php'); ?>"><a href="blog.php" class="nav-link">Blog</a></li> -->
 					<li class="nav-item <?php echo isActive('contact.php'); ?>"><a href="contact.php" class="nav-link">Contact</a></li>
-					<li class="nav-item"><a href="login-user.php" class="btn btn-primary nav-link"><i class="fa fa-sign-in"></i>&nbsp;Login</a></li>
+					<li class="nav-item"><a style="color: white !important;" href="user/login-user.php" class="btn btn-primary nav-link"><i class="fa fa-sign-in"></i>&nbsp;Login</a></li>
 				</ul>
 			</div>
 		</div>
