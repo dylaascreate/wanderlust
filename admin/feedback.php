@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     <li>
-                       <a href="List-hote.php">
+                       <a href="List-hotel.php">
                             <span class="las la-hotel"></span>
                             <small>Hotel</small>
                         </a>
@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li>
-                       <a href="logout-admin">
+                       <a href="logout-admin.php">
                             <span class="las la-sign-out-alt"></span>
                             <small>Log Out</small>
                         </a>
