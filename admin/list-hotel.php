@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li>
-                       <a href="logout-admin">
+                       <a href="logout-admin.php">
                             <span class="las la-sign-out-alt"></span>
                             <small>Log Out</small>
                         </a>
@@ -62,10 +62,19 @@
     
     <div class="main-content">
         <main>
-            
             <div class="page-header">
-                <h1>Hotel List</h1>
-                <small>WanderLust</small>
+                <div class="header-content">
+                    <div class="title-section">
+                        <h1>Hotel List</h1>
+                        <small>WanderLust</small>
+                    </div>
+                    <div class="nav-section">
+                        <nav>
+                            <ul>
+                                <li><a class="hover-effect" href="booking-list-admin.php"><i class="las la-clipboard-list"></i>&nbsp;Booking Details</a></li>
+                        </nav>
+                    </div>
+                </div>
             </div>
             
             <div class="page-content">
