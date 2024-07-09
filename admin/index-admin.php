@@ -123,7 +123,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <a onclick="openPopup('addPopup')"class="button">Add User</a>
@@ -263,7 +262,39 @@
                         </table>
                     </div>
                 </div>
-            </div>  
+                <div></div>
+                <br>
+                <h2 style="color:black;">Contact Section</h2>
+                <div class="analytics table-responsive"style="width: 400%;">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th><span class="las la-sort"></span> NAME</th>
+                                <th><span class="las la-sort"></span> EMAIL</th>
+                                <th><span class="las la-sort"></span> SUBJECT</th>
+                                <th><span class="las la-sort"></span> MESSAGE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="client">
+                                        <div class="contact-img">
+                                            <i class="las la-user-circle"></i>
+                                        </div>
+                                        <div class="client-info">
+                                            <h4>Andrew Bruno</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>bruno@crossover.org</td>
+                                <td>Room</td>
+                                <td>Nice</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> 
         </main>
         <script>
         // JavaScript functions to control the popup
