@@ -1,4 +1,15 @@
- @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600&display=swap');
+.contact-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Adjust as necessary */
+}
+
+.contact-img i {
+    font-size: 48px; /* Adjust as necessary */
+    color: #333; /* Adjust as necessary */
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600&display=swap');
  
 .hover-effect {
     color: black; 
