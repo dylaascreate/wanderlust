@@ -1,154 +1,32 @@
-<?php
-$title = 'Hotel Details'; // set hotel name
-include 'header.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Booking</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Booking Record</title>
+    <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('images/bg_1.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .records {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 90%;
-            width: 100%;
-        }
-        .records h2 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #f2f2f2;
-            color: #333;
-        }
-        td {
-            color: #666;
-        }
-        .actions {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-        }
-        .actions span {
-            cursor: pointer;
-            font-size: 18px;
-        }
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            z-index: 1000;
-            max-width: 50%;
-            width: 800px;
-            height: 700px;
-        }
-        .popup-content {
-            position: relative;
-        }
-        .popup-content h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        .form-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 6px;
-        }
-        .form-group {
-            flex: 1;
-            min-width: calc(50% - 5px);
-        }
-        .form-group textarea {
-            min-width: 100%;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #333;
-        }
-        .form-group input, .form-group select, .form-group textarea {
-            width: 100%;
-            padding: 20px;
-            height: 50px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        #viewPopup .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            height: 90px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .form-group button {
-            width: 100%;
-            padding: 10px;
-            background-color: #5cb85c;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .form-group button:hover {
-            background-color: #4cae4c;
-        }
-        @media (max-width: 768px) {
-            .form-row {
-                flex-direction: column;
-            }
-            .form-group {
-                min-width: 100%;
-            }
-        }
-    </style>
 </head>
 <body>
-   <!-- Table for records -->
-    <div class="records">
+    <?php
+        $title = 'Destination';
+        include 'header.php';
+    ?>
+
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate pb-5 text-center">
+                    <p class="breadcrumbs"><span class="mr-2"><a href="index-user.php">Home <i class="fa fa-chevron-right"></i></a></span> <span>Booking <i class="fa fa-chevron-right"></i></span></p>
+                    <h1 class="mb-0 bread">Booking Record</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking-list" class="ftco-section">
+      <div class="records">
         <h2>Booking Records</h2>
         <table>
             <thead>
@@ -294,14 +172,49 @@ include 'header.php';
             </tbody>
         </table>
     </div>
+    </section>
+
+    <?php include 'footer.php'; ?>
+
+    <script>
+        var currentPage = 1; // Track current page
+
+        function showPage(page) {
+            if (page === 'page1') {
+                document.getElementById('section-page1').style.display = 'block';
+                document.getElementById('section-page2').style.display = 'none';
+                currentPage = 1;
+            } else if (page === 'page2') {
+                document.getElementById('section-page1').style.display = 'none';
+                document.getElementById('section-page2').style.display = 'block';
+                currentPage = 2;
+            }
+        }
+
+        function navigatePage(direction) {
+            if (direction === -1 && currentPage > 1) {
+                showPage('page' + (currentPage - 1));
+            } else if (direction === 1 && currentPage < 2) {
+                showPage('page' + (currentPage + 1));
+            }
+        }
+
+        function loadFile(event) {
+            var image = document.getElementById('profileImage');
+            image.src = URL.createObjectURL(event.target.files[0]);
+            image.onload = function() {
+                URL.revokeObjectURL(image.src) // free memory
+            }
+        }
+    </script>
 
     <script>
         function openPopup(popupId) {
-            document.getElementById(popupId).style.display = "block";
+            document.getElementById(popupId).style.display = 'block';
         }
 
         function closePopup(popupId) {
-            document.getElementById(popupId).style.display = "none";
+            document.getElementById(popupId).style.display = 'none';
         }
     </script>
 
