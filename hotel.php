@@ -27,37 +27,63 @@ include 'header.php';
   </div>
 </section>
 
+<?php
+// Database connection settings
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "nwl";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT id, name, location, price, image_url, star_rating, days, amenities FROM hotels";
+$result = $conn->query($sql);
+?>
+
 <section id="section-page1" class="ftco-section">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 ftco-animate">
-        <div class="project-wrap hotel">
-          <a href="hotel-details.php" class="img" style="background-image: url(images/hotel-resto-1.jpg);">
-            <span class="price">$200/person</span>
-          </a>
-          <div class="text p-4">
-            <p class="star mb-2">
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </p>
-            <span class="days">8 Days Tour</span>
-            <h3><a href="hotel-details.php">Manila Hotel</a></h3>
-            <p class="location"><span class="fa fa-map-marker"></span> Manila, Philippines</p>
-            <ul>
-              <li><span class="flaticon-shower"></span>2</li>
-              <li><span class="flaticon-king-size"></span>3</li>
-              <li><span class="flaticon-mountains"></span>Near Mountain</li>
-            </ul>
+<?php
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        ?>
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap hotel">
+              <a href="hotel-details.php?id=<?php echo $row['id']; ?>" class="img" style="background-image: url(<?php echo $row['image_url']; ?>);">
+                <span class="price">$<?php echo $row['price']; ?>/person</span>
+              </a>
+              <div class="text p-4">
+                <p class="star mb-2">
+                  <?php for ($i = 0; $i < $row['star_rating']; $i++) { ?>
+                  <span class="fa fa-star"></span>
+                  <?php } ?>
+                </p>
+                <span class="days"><?php echo $row['days']; ?> Days Tour</span>
+                <h3><a href="hotel-details.php?id=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a></h3>
+                <p class="location"><span class="fa fa-map-marker"></span> <?php echo $row['location']; ?></p>
+                <ul>
+                  <?php 
+                  $amenities = json_decode($row['amenities'], true);
+                  foreach($amenities as $amenity) { ?>
+                    <li><span class="flaticon-<?php echo $amenity['icon']; ?>"></span><?php echo $amenity['text']; ?></li>
+                  <?php } ?>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- Select 6 data per page -->
-    </div>
-  </div>
-</section>
+        <?php
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+?>
 
 <section id="section-page2" class="ftco-section" style="display: none;">
   <div class="container">

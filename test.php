@@ -1,18 +1,10 @@
 <?php
-// Database connection settings
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "nwl";
+// Database connection setup
+$conn = new mysqli('host', 'username', 'password', 'database');
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
 
 $hotel_id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
 
@@ -28,32 +20,14 @@ $resultHotel = $stmtHotel->get_result();
 
 if ($resultHotel->num_rows > 0) {
     $hotel = $resultHotel->fetch_assoc();
-    $titlepage = $hotel['name']; // Set hotel name for the title
-    $image_url = $hotel['image_url'];
+    $title = $hotel['name']; // Set hotel name for the title
 } else {
     echo "No details found for this hotel.";
     exit;
 }
-
 $stmtHotel->close();
 
-$title = $titlepage; // set hotel name
-include 'header.php';
-?>
- <!-- HERO -->
- <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('<?php echo $image_url; ?>');">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
-      <div class="col-md-9 ftco-animate pb-5 text-center">
-       <h1 class="mb-0 bread"><?php echo $titlepage; ?></h1> <!-- set hotel name -->
-     </div>
-   </div>
- </div>
- </section>
-
-<?php
- // Fetch rooms for the specific hotel
+// Fetch rooms for the specific hotel
 $sqlRooms = "SELECT room_type, price, bath, bed, wifi, image_url FROM rooms WHERE hotel_id = ?";
 $stmtRooms = $conn->prepare($sqlRooms);
 $stmtRooms->bind_param('i', $hotel_id);
@@ -69,22 +43,30 @@ if ($resultRooms->num_rows > 0) {
 $stmtRooms->close();
 $conn->close();
 ?>
- <section class="ftco-section">
-			<div class="container">
-				<div class="row justify-content-center pb-4">
-					<div class="col-md-12 heading-section text-center ftco-animate">
-						<span class="subheading">Our Rooms</span>
-						<h2 class="mb-4">Explore Our Rooms</h2> 
-						<!-- pull >4 data from databse, select destination and calc total of tour existed from tour table -->
-					</div>
-				</div>
-			</div>
-            <div class="container">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?php echo htmlspecialchars($title); ?></title>
+    <!-- Include other head elements as needed -->
+</head>
+<body>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center pb-4">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <span class="subheading">Our Rooms</span>
+                    <h2 class="mb-4">Explore Our Rooms</h2> 
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <div class="row g-4">
                 <?php foreach ($rooms as $room): ?>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="room-item shadow rounded overflow-hidden">
-                            <div class="position-relative">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="room-item shadow rounded overflow-hidden">
+                        <div class="position-relative">
                             <img class="img-fluid" src="<?php echo htmlspecialchars($room['image_url']); ?>" alt="">
                             <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$<?php echo htmlspecialchars($room['price']); ?>/Night</small>
                         </div>
@@ -111,13 +93,7 @@ $conn->close();
                 </div>
                 <?php endforeach; ?>
             </div>
-			</div>
-		</section>
-
-<script>
-    function alertUserLogin() {
-        alert("You need to login to proceed.");
-        // You can redirect to the login page or perform any other action here
-    }
-</script>
-<?php include 'footer.php'; ?>
+        </div>
+    </section>
+</body>
+</html>
