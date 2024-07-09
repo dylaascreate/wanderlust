@@ -13,7 +13,7 @@
       <div class="login">
          <img src="img/pic1register.jpg" alt="login image" class="login__img">
 
-         <form action="" class="login__form">
+         <form action="../user/index-user.php" class="login__form">
             <h1 class="login__title">Login</h1>
 
             <div class="login__content">
